@@ -3,12 +3,13 @@ import React from 'react'
 import styles from './Hero.module.css';
 
 
+
 function Hero() {
     return (
         <section className={styles.heroSection}>
             <div className={styles.heroContent}>
                 <div className={styles.heroProfile}>
-                    <img src="./public/HeroLogo.webp" alt='Picture for hero section' className={styles.HeroLogo} />
+                    <img src="./HeroLogo.webp" alt='Picture for hero section' className={styles.HeroLogo} />
                     <span className={`${styles.iconVerified} icon-verified`}/>
 
                 </div>

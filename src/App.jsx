@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer'
 import handleScrollBtn from './functions/scrollBtn'
 import { useEffect } from 'react'
 
+
 function App() {
   useEffect(() => {
     window.addEventListener("scroll", () =>handleScrollBtn())

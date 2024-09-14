@@ -17,12 +17,12 @@
 }
 .card:hover{
     border-color: var(--blue);
-    transform: rotate(1deg) scale3d(1.01,1.01,1.01);
-    -webkit-transform: rotate(1deg) scale3d(1.01,1.01,1.01);
-    -moz-transform: rotate(1deg) scale3d(1.01,1.01,1.01);
-    -ms-transform: rotate(1deg) scale3d(1.01,1.01,1.01);
-    -o-transform: rotate(1deg) scale3d(1.01,1.01,1.01);
+    transform:rotate(1deg)scale3d(1.01,1.01,1.01) !important;
     cursor: pointer;
+    -webkit-transform:rotate(1deg)scale3d(1.01,1.01,1.01) !important;
+    -moz-transform:rotate(1deg)scale3d(1.01,1.01,1.01) !important;
+    -ms-transform:rotate(1deg)scale3d(1.01,1.01,1.01) !important;
+    -o-transform:rotate(1deg)scale3d(1.01,1.01,1.01) !important;
 }
 /* img */
 .cardImg{
