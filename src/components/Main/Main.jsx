@@ -40,9 +40,9 @@ function Main() {
                 }} className={`${styles.filterBtn} ${projectsSelected === 'php' && styles.active}`}>Php & Laravel</button>
             </section>
             <section className={styles.CardsContainer}>
-                {data.map((project, index) => {
+                {data.map((project) => {
                     return (
-                        <Card key={index} title={project.projectTitle} description={project.description} />
+                        <Card key={project.id} title={project.projectTitle} description={project.description} />
                     )
 
                 })}
