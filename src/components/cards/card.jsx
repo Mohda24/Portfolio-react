@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 // @ts-ignore
 import styles from './Card.module.css'
 
-function Card({ title, description, key }) {
+function Card({ title, description,key,src}) {
     return (
         <motion.article
             key={key}
@@ -13,7 +13,7 @@ function Card({ title, description, key }) {
             transition={{ type: "spring", damping: 8, stiffness: 50, duration: "0.4s" }}
             className={styles.card}>
             <div className={styles.cardImgBox}>
-                <img className={styles.cardImg} src="./1.jpg" alt="" />
+                <img className={styles.cardImg} src={src} alt="" />
             </div>
             <div className={styles.cardContent}>
                 <h2 className={styles.cardTitle}>{title}</h2>

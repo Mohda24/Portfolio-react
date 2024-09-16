@@ -42,7 +42,7 @@ function Main() {
             <section className={styles.CardsContainer}>
                 {data.map((project) => {
                     return (
-                        <Card key={project.id} title={project.projectTitle} description={project.description} />
+                        <Card  key={project.id} title={project.projectTitle} description={project.description} src={project.imgPath}/>
                     )
 
                 })}
