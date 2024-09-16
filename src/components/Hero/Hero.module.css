@@ -73,3 +73,6 @@
     scale: 1.08;
 }
 /* ##########################################--HeroSectionAnimation--########################################### */
+@media (max-width:1200px){
+    .HeroSectionAnimation{display: none;}
+}

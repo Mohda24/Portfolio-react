@@ -14,7 +14,7 @@
     -moz-border-radius: 55px;
     -ms-border-radius: 55px;
     -o-border-radius: 55px;
-    box-shadow: 1px 1px 40px rgb(27, 27, 27);
+    box-shadow: 1px 1px 40px var(--shadow-color);
 }
 
 .links {
@@ -46,7 +46,7 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    box-shadow: 1px 1px 40px rgb(27, 27, 27);
+    box-shadow: 1px 1px 40px var(--shadow-color);
     background-color: var(--bgHeader);
     color: var(--sub-title);
     border: 1px solid rgba(255, 115, 99, 0.13);

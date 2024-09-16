@@ -1,9 +1,16 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 // @ts-ignore
 import styles from './header.module.css';
+import {addDarkModeToStorage} from './../../functions/addDarkmode';
 
 function header() {
     let [ShowModul,setShowModul]=useState(false);
+    let [darkMode,setDarkMode]=useState(localStorage.getItem("darkMode") ?? 'dark')
+    useEffect(()=>{
+        document.body.classList.value="";
+        document.body.classList.add(darkMode)
+    },[darkMode])
+
     return (
         <header className={styles.header}>
             <button className={`${styles.menu} icon-menu`} onClick={()=>{
@@ -20,8 +27,14 @@ function header() {
                 </ul>
 
             </nav>
-            <button className={styles.darkMode}>
-                <span className='icon-moon-o'/>
+            <button
+                onClick={()=>{
+                    addDarkModeToStorage(darkMode,setDarkMode);
+                    
+
+                }} className={styles.darkMode}>
+                {darkMode==="dark" && <span className='icon-moon-o'/>}
+                {darkMode==="light" && <span className='icon-sun'/>}
             </button>
             {ShowModul &&
             <div  className={styles.fixed}>

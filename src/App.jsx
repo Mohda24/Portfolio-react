@@ -9,8 +9,9 @@ import { useEffect } from 'react'
 
 
 function App() {
+
   useEffect(() => {
-    window.addEventListener("scroll", () =>handleScrollBtn())
+    window.addEventListener("scroll", () => handleScrollBtn())
   }, [])
   return (
     <div id='up' className='container'>
