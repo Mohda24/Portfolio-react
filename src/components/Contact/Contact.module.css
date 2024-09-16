@@ -96,6 +96,7 @@
 /* animation */
 @media (max-width:1100px){
     .contactAnimation{display: none;}
+    .contactForm{width: 100%;}
 }
 @media (max-width:600px){
     .contactMsg,.contactEmail{

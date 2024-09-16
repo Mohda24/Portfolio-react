@@ -41,6 +41,7 @@
 html {
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 body {
@@ -199,4 +200,8 @@ button {
     width: calc(100% + var(--container-padding) + var(--container-padding));
     margin-left: calc(var(--container-padding) * -1);
   }
+}
+/* media query for font size */
+@media(max-width:768px){
+  html{font-size: 87.5%;}
 }
