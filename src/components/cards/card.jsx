@@ -13,7 +13,7 @@ function Card({ title, description,key,src}) {
             transition={{ type: "spring", damping: 8, stiffness: 50, duration: "0.4s" }}
             className={styles.card}>
             <div className={styles.cardImgBox}>
-                <img className={styles.cardImg} src={src} alt="" />
+                <img loading='lazy' className={styles.cardImg} src={src} alt="" />
             </div>
             <div className={styles.cardContent}>
                 <h2 className={styles.cardTitle}>{title}</h2>
